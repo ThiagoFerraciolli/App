@@ -10,7 +10,7 @@ resources:
 
 variables:
   # Container registry service connection established during pipeline creation
-  dockerRegistryServiceConnection: 'c352297f-1dbc-4af9-b33f-dba227a3cbb2'
+  dockerRegistryServiceConnection: '2b91c098-75f6-4443-b5b8-b216c26b12ea'
   imageRepository: 'thiagoferraciolliapp'
   containerRegistry: 'corecounter.azurecr.io'
   dockerfilePath: '$(Build.SourcesDirectory)/Dockerfile'
@@ -37,3 +37,4 @@ stages:
         containerRegistry: $(dockerRegistryServiceConnection)
         tags: |
           $(tag)
+
