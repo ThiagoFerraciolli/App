@@ -41,4 +41,4 @@ stages:
       inputs:
         containerRegistry: 'corecounter'
         command: 'start'
-        container: '17'
+        container: 'corecounter'
