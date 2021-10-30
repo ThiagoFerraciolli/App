@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: thiagoferraciolliapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: thiagoferraciolliapp
+  template:
+    metadata:
+      labels:
+        app: thiagoferraciolliapp 
+    spec:
+      containers:
+        - name: thiagoferraciolliapp 
+          image: corecounter.azurecr.io/thiagoferraciolliapp
+          ports:
+          - containerPort: 80
