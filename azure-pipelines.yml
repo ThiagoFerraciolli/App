@@ -30,9 +30,11 @@ stages:
     - job: A2
       steps:
       - bash: echo "A2"
+      cancelTimeoutInMinutes: 1
       
 - stage: Build
   displayName: Build stage
+  dependsOn: teste
   jobs:
   - job: Build
     displayName: Build
