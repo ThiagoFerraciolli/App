@@ -21,17 +21,6 @@ variables:
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
 stages:
-- stage: teste
-  displayName: teste
-  jobs:
-    - job: A1
-      steps:
-      - bash: echo "A1"
-    - job: A2
-      steps:
-      - bash: echo "A2"
-      cancelTimeoutInMinutes: 1
-      
 - stage: Build
   displayName: Build stage
   dependsOn: teste
